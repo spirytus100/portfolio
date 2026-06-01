@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarosław Wolski</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="theme-color" content="#0d1117">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Consolas, "Courier New", monospace;
+            background-color: #0d1117;
+            color: #00ff9c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h1::before {
+            content: "$ ";
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        h2::before {
+            content: "> ";
+        }
+
+        a {
+            color: #00ff9c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 600px) {
+            .profile {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-direction: row-reverse;
+            }
+        }
+
+        pre {
+            white-space: pre-wrap;
+            font-family: inherit;
+            margin-top: 0;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding: 1rem;
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>jaroslaw@wolski:~</h1>
+    <p>Administrator systemów IT</p>
+</header>
+
+<div class="container">
+
+    <!-- O mnie -->
+    <section>
+        <div>
+            <h2>whoami</h2>
+            <p>
+                Administrator systemów IT. Łączę stabilność Linuxa z elastycznością chmury GCP. 
+                Dbam o bezpieczeństwo i bezawaryjność infrastruktury, stawiając na proaktywny monitoring oraz automatyzację.
+            </p>
+        </div>
+    </section>
+
+    <!-- Umiejętności -->
+    <section>
+        <h2>skills --list</h2>
+        <pre>
+    $ cloud:
+    - Google Cloud Platform
+    - Kubernetes (GKE)
+    - Docker
+
+    $ monitoring:
+    - Zabbix
+    - Grafana
+
+    $ scripting:
+    - Python
+    - Bash
+
+    $ systems:
+    - Linux (Debian/Ubuntu)
+
+    $ languages:
+    - polish
+    - english
+    - russian
+        </pre>
+    </section>
+
+    <!-- Projekt -->
+    <section>
+        <div>
+            <h2>cat after_hours.txt</h2>
+            <h3><a href="https://nicosobistego.pl">nicosobistego.pl</a></h3>
+            <p>
+                Blog z recenzjami książek, filmów i muzyki. Nie tylko dostarcza mi przyjemności z dzielenia się swoimi przemyśleniami, ale pomaga też rozwijać krytyczne myślenie.
+            </p>
+        </div>
+    </section>
+
+    <!-- Social media -->
+    <section>
+        <h2>links --social</h2>
+        <div>
+            <a href="https://www.linkedin.com/in/jaros%C5%82aw-wolski-b84925411">LinkedIn</a><br>
+            <a href="https://github.com/spirytus100">GitHub</a><br>
+            <a href="https://x.com/ja_wolski">X</a><br>
+            <a href="https://instagram.com/ja_wolski">Instagram</a>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>---</p>
+    <p>$ logout</p>
+    <p>Connection to portfolio closed.</p>
+    <p id="year">© 2026</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('year').textContent = "© " + new Date().getFullYear();
+});
+</script>
+</body>
+</html>
